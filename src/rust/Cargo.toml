@@ -1,0 +1,22 @@
+[package]
+name = 'roxigraph'
+publish = false
+version = '0.1.0'
+edition = '2021'
+rust-version = '1.65'
+
+[lib]
+crate-type = [ 'staticlib' ]
+name = 'roxigraph'
+
+[features]
+default = ["rocksdb"]
+rocksdb = ["oxigraph/rocksdb"]
+
+[dependencies]
+extendr-api = '0.8.1'
+oxigraph = { version = "0.5", default-features = false }
+
+[profile.release]
+lto = true
+codegen-units = 1
