@@ -3,7 +3,7 @@ name = 'roxigraph'
 publish = false
 version = '0.1.0'
 edition = '2021'
-rust-version = '1.65'
+rust-version = '1.70'
 
 [lib]
 crate-type = [ 'staticlib' ]
@@ -15,8 +15,9 @@ rocksdb = ["oxigraph/rocksdb"]
 
 [dependencies]
 extendr-api = '0.8.1'
-oxigraph = { version = "0.5", default-features = false }
+oxigraph = { version = "=0.5.2", default-features = false }
 
 [profile.release]
 lto = true
 codegen-units = 1
+strip = true

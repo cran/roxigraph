@@ -1,6 +1,6 @@
 Package: roxigraph
 Title: 'RDF' and 'SPARQL' for R using 'Oxigraph'
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: c(
     person("Carl", "Boettiger", , "cboettig@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-1642-628X")),
@@ -21,19 +21,20 @@ BugReports: https://github.com/cboettig/roxigraph/issues
 Encoding: UTF-8
 RoxygenNote: 7.3.3
 Config/rextendr/version: 0.4.2
-SystemRequirements: Cargo (Rust's package manager), rustc >= 1.65.0,
-        libclang-dev (for RocksDB bindings)
+SystemRequirements: Cargo (Rust's package manager), rustc >= 1.70.0,
+        libclang-dev (for RocksDB bindings), libsnappy-dev (for RocksDB
+        compression)
 Depends: R (>= 4.2)
 Suggests: testthat (>= 3.0.0), knitr, rmarkdown, spelling
 Config/testthat/edition: 3
 VignetteBuilder: knitr
 Language: en-US
 NeedsCompilation: yes
-Packaged: 2026-02-01 01:45:29 UTC; cboettig
+Packaged: 2026-02-11 15:38:41 UTC; cboettig
 Author: Carl Boettiger [aut, cre] (ORCID:
     <https://orcid.org/0000-0002-1642-628X>),
   Oxigraph Contributors [cph] (Oxigraph Rust library),
   Authors of the dependency Rust crates [aut] (see inst/AUTHORS file)
 Maintainer: Carl Boettiger <cboettig@gmail.com>
 Repository: CRAN
-Date/Publication: 2026-02-05 12:30:02 UTC
+Date/Publication: 2026-02-12 07:20:02 UTC
